@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>spacebuildcon</title>
+    <title></title>
     <style>
         .move_right {
             padding-left: 10%;
@@ -18,30 +18,40 @@
             transform: translate(-50%, -50%);
             color: white;
         }
+
+        .BigText {
+            color: white; 
+            font-size: 7vh;
+        }
+
+        .test {
+            border: 5px solid black;
+        }
+        
+        @media screen and (max-width: 1015px) { .BigText { font-size: 6vh; } }
+        @media screen and (max-width: 850px) { .BigText { top: 33%; font-size: 5vh; } }
+        @media screen and (max-width: 525px) { .BigText { top: 23%; font-size: 3vh; } }
+        @media screen and (max-width: 500px) { .BigText { top: 31%; font-size: 4.7vh; } }
     </style>
 </head>
 <body>
-    <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
-        <div class="mb-2 sm:mb-0">
-          <!-- <a href="/" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">spacebuildcon</a> -->
-            <a href="/">
-                <img src="Space-images/spacebuildcon.svg" width="20%" height="20%" />
-            </a>
+    <nav class="font-sans flex text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <!-- the button is going farther that it needs to be  -->
+            <a href="/" class="flex items-center test">
+            <img src="Space-images/spacebuildcon.svg" width="20%" height="20%" />
+          </a>
+          <div class="w-full md:w-auto">
+            <ul class="flex md:flex-row md:space-x-8 md:text-sm md:font-medium">
+              <li><a href="/AboutUs.html" aria-current="page">About Us</a></li>
+              <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Space.buildcon@yahoo.co.in"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Email</button></a></li>
+            </ul>
+          </div>
         </div>
-
-        <a href="/AboutUs.html" class="block mt-4 lg:inline-block hover:text-black mr-4">
-            About US
-        </a>
-        <div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Space.buildcon@yahoo.co.in">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Email</button>
-            </a>
-        </div>
-    </nav>
-      
+      </nav>
     <div>
         <img src="imgs/background.PNG" width="120%" height="100%" draggable="false">  
-        <strong class="centered" style="font-size:7vh">Space Buildcon</strong><br><br>
+        <strong class="centered BigText">Space Buildcon</strong><br><br>
     </div>
 
     <div class="move_right" style="font-size:5vh">LIST OF MAJOR WORKS IN HAND<br><br>
